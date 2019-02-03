@@ -1,0 +1,9 @@
+---
+#
+# Ansible playbook to manage SSH keys
+#
+
+- hosts: cloud
+  remote_user: root
+  roles:
+    - { role: sshkeys }
