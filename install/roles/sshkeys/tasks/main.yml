@@ -1,11 +1,6 @@
 ---
 
-# figure out local username
-- name: Gathering username info
-  local_action: command whoami
-  register: youruser
-  ignore_errors: true
-
+# figure out homedir location for your local key
 - name: Gathering user home directory location
   local_action: shell echo $HOME
   register: userhome
