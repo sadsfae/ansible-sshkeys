@@ -4,6 +4,7 @@ warn_list:
   - var-spacing
   - ignore-errors
   - risky-file-permissions
+  - deprecated-local-action
 
 skip_list:
   - fqcn-builtins

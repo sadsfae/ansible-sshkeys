@@ -6,4 +6,4 @@
 - hosts: servers
   remote_user: root
   roles:
-    - { role: sshkeys }
+    - {role: sshkeys}
