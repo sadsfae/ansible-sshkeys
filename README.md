@@ -2,6 +2,7 @@
 This is a simple playbook that copies your public SSH keys to remote systems, you could use this either with a public key already on the system or specify the password via the `-e` parameter below.
 
 [![CI](https://travis-ci.org/sadsfae/ansible-sshkeys.svg?branch=master)](https://travis-ci.org/sadsfae/ansible-sshkeys)
+[![GA](https://github.com/sadsfae/ansible-sshkeys/actions/workflows/ansible-lint.yml/badge.svg)](https://github.com/sadsfae/ansible-sshkeys/actions)
 
 ### Setup
 
