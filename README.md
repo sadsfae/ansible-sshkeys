@@ -12,7 +12,7 @@ git clone https://github.com/sadsfae/ansible-sshkeys
 cd ansible-sshkeys
 ```
 
-* Add the names of your servers to the inventory file under the cloud group like so.
+* Add the names of your servers to the inventory file under the servers inventory group.
 
 ```
 vi hosts
