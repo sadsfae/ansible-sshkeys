@@ -3,7 +3,6 @@ galaxy_info:
   role_name: ansible_sshkeys
   namespace: sadsfae
   description: Very simple playbook for deploying public SSH keys to remote systems.
-  travis_status_url: https://travis-ci.org/sadsfae/ansible-sshkeys.svg?branch=master
   issue_tracker_url: https://github.com/sadsfae/ansible-sshkeys/issues
   license: GPL
   min_ansible_version: 1.9
