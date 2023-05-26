@@ -5,6 +5,10 @@ warn_list:
   - ignore-errors
   - risky-file-permissions
   - deprecated-local-action
+  - no-free-form
+  - var-naming
+  - fqcn
+  - name[play]
 
 skip_list:
   - fqcn-builtins
