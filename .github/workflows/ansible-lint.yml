@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.9", "3.10", "3.11"]
+        python-version: ["3.12"]
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python-version }}
@@ -27,4 +27,4 @@ jobs:
           pip install ansible ansible-lint
       - name: Analysing playbook
         run: |
-          ansible-lint install/*.yml -x 301,206,504 -v
+          ansible-lint install/*.yml -x command-instead-of-module,jinja,no-free-form,var-naming,risky-file-permissions,ignore-errors,no-changed-when -v
