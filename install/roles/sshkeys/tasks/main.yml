@@ -19,3 +19,10 @@
     key="{{ lookup('file', '{{ userhome.stdout }}/.ssh/id_rsa.pub') }}"
     manage_dir=yes
   ignore_errors: true
+
+- name: Copy id_ed25519.pub if found locally
+  authorized_key:
+    user=root
+    key="{{ lookup('file', '{{ userhome.stdout }}/.ssh/id_ed25519.pub') }}"
+    manage_dir=yes
+  ignore_errors: true
