@@ -41,3 +41,19 @@ ansible-playbook -i hosts install/sshkeys.yml -e "ansible_ssh_pass=PASSWORD"
 
   - Alternatively, if you already have your public key on remote systems but want to copy a bunch of other keys then just run `ansible-playbook` without the `-e` parameter.
 
+### Dealing with Older Python 3.6
+
+  - Older distributions like Rocky Linux 8, RHEL 8, CentOS8 etc. may use Python3.6.8 which is not supported by Ansible (>=2.17)
+  - You will want to use a Python virtualenv instead if you have old hosts and a newer Ansible client.
+
+```bash
+python -m venv older_ansible
+. older_ansible/bin/activate
+pip install --upgrade pip setuptools wheel
+pip install "ansible>=9.0,<10.0"
+```
+
+```bash
+ansible --version
+```
+
