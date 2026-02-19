@@ -23,7 +23,7 @@ host01.example.com
 host02.example.com
 ```
 
-* By default this will copy `id_rsa.pub` found in your local user home directory where you run Ansible.
+* By default this will copy `id_rsa.pub` or `id_ed25519.pub` found in your local user home directory where you run Ansible.
 
 * Add any additional public SSH keys as needed
   - copy (append) your pubkey to ```install/roles/sshkeys/files/authorized_keys```
